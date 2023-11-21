@@ -15,8 +15,8 @@ public class UIController {
 
     @GetMapping("/")
     public String viewHomePage(Model model) throws IOException {
-        model.addAttribute("listProductDocuments",elasticSearchQuery.searchAllDocuments());
-        return "index";
+        model.addAttribute("listProductDocuments_2",elasticSearchQuery.searchAllDocuments());
+        return "index-111";
     }
 
     @PostMapping("/saveProduct")
